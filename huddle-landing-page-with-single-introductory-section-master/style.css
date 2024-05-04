@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  background-image: url(./images/bg-mobile.svg);
+  background-color: hsl(257, 40%, 49%);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.section {
+  width: 90%;
+  margin: auto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+nav {
+  margin-bottom: 3rem;
+}
+nav img {
+  width: 30%;
+}
+.container img {
+  width: 100%;
+}
+.textcontainer {
+  margin-top: 2rem;
+  text-align: center;
+  color: white;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+h2 {
+  margin-top: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+}
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  margin-top: 1rem;
+  line-height: 25px;
+  margin-left: 1rem;
+}
+button {
+  margin-top: 10px;
+  padding: 0.7rem 2.5rem;
+  border-radius: 16px;
+  border: none;
+  color: purple;
+}
+.social {
+  margin: 2rem auto;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 2rem;
+  color: white;
+}
+h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+  margin-top: 1rem;
+  line-height: 25px;
+  margin-left: 1rem;
+}
+
+/* MEDIA QUERY */
+@media (width > 900px) {
+  .social {
+    justify-content: flex-end;
+  }
+  .container {
+    flex-direction: row;
+  }
+  .container img {
+    width: 50%;
+  }
+  nav img {
+    width: 20%;
+  }
+
+  .textcontainer {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    text-align: left;
+    width: 50%;
+  }
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  h2 {
+    margin-top: 0.8rem;
+    font-size: 1.7rem;
+  }
+  .beside {
+    margin: 20px;
+  }
+}
